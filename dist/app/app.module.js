@@ -11,15 +11,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var core_2 = require('ng2-adal/core');
+var secret_service_1 = require('./services/secret.service');
 var app_component_1 = require('./components/app.component');
+var app_router_1 = require('./routers/app.router');
+var protected_directive_1 = require("./directives/protected.directive");
+var home_component_1 = require("./components/home.component");
+var welcome_component_1 = require("./components/welcome.component");
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [app_component_1.AppComponent],
-            providers: [core_2.AdalService],
+            imports: [platform_browser_1.BrowserModule, app_router_1.routes],
+            declarations: [app_component_1.AppComponent, protected_directive_1.ProtectedDirective, home_component_1.HomeComponent, welcome_component_1.WelcomeComponent],
+            providers: [core_2.AdalService, secret_service_1.SecretService],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

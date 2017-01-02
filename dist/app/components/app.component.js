@@ -9,16 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var secret_service_1 = require("../services/secret.service");
+var adal_service_1 = require("ng2-adal/services/adal.service");
+var router_1 = require("@angular/router");
 var AppComponent = (function () {
-    function AppComponent() {
-        this.name = 'Angular';
+    function AppComponent(adalService, secretService, router) {
+        this.adalService = adalService;
+        this.secretService = secretService;
+        this.router = router;
+        this.adalService.init(this.secretService.adalConfig);
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "<h1>Hello {{name}}</h1>",
+            template: '<div><router-outlet></router-outlet></div>'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [adal_service_1.AdalService, secret_service_1.SecretService, router_1.Router])
     ], AppComponent);
     return AppComponent;
 }());
