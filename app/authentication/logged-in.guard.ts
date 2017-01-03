@@ -8,7 +8,6 @@ export class LoggedInGuard implements CanActivate {
   private router: Router) {}
 
   canActivate() {
-    console.log(this.adalService.userInfo);
     if (this.adalService.userInfo.isAuthenticated) {
       return true;
     } else {

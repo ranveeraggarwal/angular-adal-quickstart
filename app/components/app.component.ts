@@ -11,7 +11,6 @@ export class AppComponent implements OnInit{
   ngOnInit(): void {
     this.adalService.handleWindowCallback();
     this.adalService.getUser();
-    console.log(this.adalService.userInfo);
   }
   constructor(
     private adalService: AdalService,
