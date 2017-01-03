@@ -7,14 +7,14 @@ import {SecretService} from './services/secret.service';
 import { AppComponent }  from './components/app.component';
 
 import {routes} from './routers/app.router'
-import {ProtectedDirective} from "./directives/protected.directive";
 import {HomeComponent} from "./components/home.component";
 import {WelcomeComponent} from "./components/welcome.component";
+import {LoggedInGuard} from "./authentication/logged-in.guard";
 
 @NgModule({
   imports:      [ BrowserModule, routes],
-  declarations: [ AppComponent, ProtectedDirective, HomeComponent, WelcomeComponent ],
-  providers: [AdalService, SecretService],
+  declarations: [ AppComponent, HomeComponent, WelcomeComponent ],
+  providers: [AdalService, SecretService, LoggedInGuard],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

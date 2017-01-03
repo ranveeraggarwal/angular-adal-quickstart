@@ -10,3 +10,4 @@ e2e/**/*.js.map
 _test-output
 _temp
 dist/**/*.js
+app/services/secret.service.ts

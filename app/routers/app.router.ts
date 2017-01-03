@@ -2,11 +2,18 @@ import {ModuleWithProviders} from "@angular/core";
 import {Routes, RouterModule} from "@angular/router";
 import {HomeComponent} from "../components/home.component";
 import {WelcomeComponent} from "../components/welcome.component";
+import {LoggedInGuard} from "../authentication/logged-in.guard";
 
 export const router: Routes = [
   {
+    path: '',
+    redirectTo: '/welcome',
+    pathMatch: 'full'
+  },
+  {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
+    canActivate: [LoggedInGuard]
   },
   {
     path: 'welcome',
