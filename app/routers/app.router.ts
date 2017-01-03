@@ -7,7 +7,7 @@ import {LoggedInGuard} from "../authentication/logged-in.guard";
 export const router: Routes = [
   {
     path: '',
-    redirectTo: '/welcome',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
   {

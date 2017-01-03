@@ -13,7 +13,7 @@ export class WelcomeComponent implements OnInit {
     private adalService: AdalService
   ) {
     console.log('Entering welcome');
-    this.adalService.handleWindowCallback();
+
     if (this.adalService.userInfo.isAuthenticated) {
       this.router.navigate(['/home']);
     }
