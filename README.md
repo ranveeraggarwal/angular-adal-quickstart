@@ -2,7 +2,7 @@
 
 An Angular quickstart with ng2-adal (a module based on angular2-adal) plugged in.
 
-Please let me know in case of bugs/issues.
+If this doesn't work with Angular 2, you can find an example for it on the **Angular2** branch.
 
 ## Changelog
 
