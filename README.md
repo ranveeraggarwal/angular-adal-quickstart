@@ -1,10 +1,14 @@
-# ng2-adal Quickstart
+# Angular 2/4 ADAL Quickstart
 
-The very well known updated Angular Quickstart repository updated with ng2-adal, a module based on angular2-adal, a very well written library that is known to cause some problems because of rapid breaking changes in Angular.
-
-This one works and I am currently using this for a personal project.
+An Angular quickstart with ng2-adal (a module based on angular2-adal) plugged in.
 
 Please let me know in case of bugs/issues.
+
+## Changelog
+
+### v2.0.0
+
+This repository has been updated to use Angular v4 and ng2-adal v2.0.0. Since there were no tests written for the quickstart example, I have removed them - you can integrate your own testing framework.
 
 ## How to Use
 
@@ -16,3 +20,13 @@ Please let me know in case of bugs/issues.
 ## Getting Token as a String
 
 Use `services/auth.service.ts`. This token needs to be passed as a header for REST service authentication.
+
+## Contributing
+
+I am not actively maintaining this repository (although, I will update it once in a while in case of breaking changes in the library or a major update).  
+If you're interested in contributing, do raise an issue/PR and have a look at the CONTRIBUTING.md.  
+
+Here's what you could help me do:
+- Webpack integration
+- Gulp/Grunt/Bower integration
+- Tests/CI

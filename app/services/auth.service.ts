@@ -1,5 +1,6 @@
-import {Component} from '@angular/core';
-import {AdalService} from 'ng2-adal/core';
+import {Component, Injectable} from '@angular/core';
+import {AdalService} from 'ng2-adal/dist/core';
+import {Observable} from 'rxjs';
 
 @Injectable()
 export class AuthService {

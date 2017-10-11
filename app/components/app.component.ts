@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {SecretService} from "../services/secret.service";
-import {AdalService} from "ng2-adal/services/adal.service";
+import {AdalService} from "ng2-adal/dist/services/adal.service";
 import {Router} from "@angular/router";
 
 @Component({

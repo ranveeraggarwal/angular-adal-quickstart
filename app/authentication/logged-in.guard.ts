@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Router, CanActivate } from '@angular/router';
-import {AdalService} from 'ng2-adal/core';
+import {AdalService} from 'ng2-adal/dist/core';
 
 @Injectable()
 export class LoggedInGuard implements CanActivate {

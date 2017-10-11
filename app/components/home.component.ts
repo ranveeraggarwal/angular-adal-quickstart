@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {AdalService} from 'ng2-adal/core';
+import {AdalService} from 'ng2-adal/dist/core';
 
 @Component({
   selector: 'home',
